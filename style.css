@@ -1,0 +1,42 @@
+nav {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: red; */
+  margin: auto;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: 20px;
+}
+
+ul li {
+  padding: 0 10px;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+.search-section {
+  margin-top: 20px;
+  text-align: center;
+}
+input {
+  padding: 10px;
+  border: 1px solid rgb(22, 17, 17);
+  border-radius: 10px;
+  font-size: 20px;
+}
+button {
+  background-color: salmon;
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  font-size: 20px;
+  border-radius: 10px;
+}
