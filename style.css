@@ -27,10 +27,11 @@ ul li a {
   text-align: center;
 }
 input {
+  width: 40%;
   padding: 10px;
   border: 1px solid rgb(22, 17, 17);
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 18px;
 }
 button {
   background-color: salmon;
