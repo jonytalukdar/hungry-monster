@@ -1,8 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
 nav {
   width: 70%;
   display: flex;
@@ -45,4 +40,45 @@ button {
   padding: 10px 12px;
   font-size: 20px;
   border-radius: 10px;
+}
+
+.title {
+  margin: 15px 0;
+}
+
+.meal-result {
+  margin-top: 15px;
+}
+.meal {
+  margin: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+.meal-item {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px 1px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.meal-img img {
+  width: 100%;
+  display: block;
+}
+.meal h3 {
+  font-size: 22px;
+}
+
+@media screen and (min-width: 768px) {
+  .meal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+}
+
+.meal-details {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
