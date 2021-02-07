@@ -54,8 +54,8 @@ function getMealList() {
 // }
 // }
 
-const something = document.getElementById('meal');
-something.addEventListener('click', function (e) {
+const showMealDetails = document.getElementById('meal');
+showMealDetails.addEventListener('click', function (e) {
   let mealItem = e.target.parentElement.parentElement;
   fetch(
     `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealItem.dataset.id}`
