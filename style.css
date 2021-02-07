@@ -181,6 +181,10 @@ body {
   width: 100%;
 }
 
+.ingredients {
+  text-align: left;
+}
+
 /* Media Queries */
 @media screen and (min-width: 600px) {
   .meal-search-box {
