@@ -1,3 +1,4 @@
+// variable
 const searchBtn = document.getElementById('search-btn');
 const mealList = document.getElementById('meal');
 const mealDetailsContent = document.querySelector('.meal-details-content');
@@ -33,7 +34,7 @@ function getMealList() {
         });
         mealList.classList.remove('notFound');
       } else {
-        html = "Sorry, we didn't find any meal!";
+        html = "Sorry, we didn't find any meal! Please input only one letter";
         mealList.classList.add('notFound');
       }
 
