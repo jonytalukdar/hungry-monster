@@ -56,17 +56,15 @@ body {
   width: 100%;
 }
 .search-control {
-  padding: 0 1rem;
-  font-size: 1.1rem;
+  padding: 0 16px;
+  font-size: 18px;
   font-family: inherit;
   outline: 0;
-  border: 1px solid var(--tenne-tawny);
-  color: var(--tenne-tawny);
-  border-top-left-radius: 2rem;
-  border-bottom-left-radius: 2rem;
+  border: 1px solid salmon;
+  border-radius: 10px;
 }
 .search-control::placeholder {
-  color: var(--tenne-tawny);
+  color: salmon;
 }
 .search-btn {
   width: 30%;
@@ -75,8 +73,7 @@ body {
   background-color: salmon;
   color: #000;
   border: none;
-  border-top-right-radius: 32px;
-  border-bottom-right-radius: 32px;
+  border-radius: 10px;
   transition: all 0.4s linear;
 }
 
