@@ -12,7 +12,7 @@ recipeCloseBtn.addEventListener('click', () => {
 
 // get meal list that matches with the ingredients
 function getMealList() {
-  let searchInput = document.getElementById('search-input').value;
+  let searchInput = document.getElementById('search-input').value[0];
   fetch(`https://www.themealdb.com/api/json/v1/1/search.php?f=${searchInput}`)
     .then((response) => response.json())
     .then((data) => {
