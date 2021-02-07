@@ -34,7 +34,7 @@ function getMealList() {
         });
         mealList.classList.remove('notFound');
       } else {
-        html = "Sorry, we didn't find any meal! Please input only one letter";
+        html = "Sorry, we didn't find any meal!";
         mealList.classList.add('notFound');
       }
 
@@ -64,7 +64,14 @@ function mealRecipeModal(meal) {
             <img src = "${meal.strMealThumb}" alt = "">
         </div>
         <h2 class = "recipe-title">${meal.strMeal}</h2>
-        
+        <ul class="ingredient">
+        <li>${meal.strIngredient1}</li> 
+        <li>${meal.strIngredient2}</li> 
+        <li>${meal.strIngredient3}</li> 
+        <li>${meal.strIngredient4}</li> 
+        <li>${meal.strIngredient5}</li> 
+        <li>${meal.strIngredient6}</li> 
+        </ul>      
     `;
   mealDetailsContent.innerHTML = html;
   mealDetailsContent.parentElement.classList.add('showRecipe');
