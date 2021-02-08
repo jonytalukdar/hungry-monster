@@ -69,13 +69,15 @@ function mealRecipeModal(meal) {
         <h2 class = "recipe-title">${meal.strMeal}</h2>
         <h3 class="ingredients">Ingredients</h3>
         <ul class="ingredient">
-        <li>${meal.strIngredient1}</li> 
-        <li>${meal.strIngredient2}</li> 
-        <li>${meal.strIngredient3}</li> 
-        <li>${meal.strIngredient4}</li> 
-        <li>${meal.strIngredient5}</li> 
-        <li>${meal.strIngredient6}</li> 
-        </ul>      
+        <li>${meal.strIngredient1}</li>
+        <li>${meal.strIngredient2}</li>
+        <li>${meal.strIngredient3}</li>
+        <li>${meal.strIngredient4}</li>
+        <li>${meal.strIngredient5}</li>
+        <li>${meal.strIngredient6}</li>
+        <li>${meal.strIngredient7}</li>
+        <li>${meal.strIngredient8}</li>
+        </ul>
     `;
   mealDetailsContent.innerHTML = html;
   mealDetailsContent.parentElement.classList.add('showRecipe');
