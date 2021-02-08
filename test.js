@@ -57,7 +57,6 @@ const disPlay = (foods) => {
         </div>
     `;
       mealList.classList.remove('notFound');
-      console.log(meal.strMeal);
     } else {
       html = "Sorry, we didn't find any meal! Please insert only one letter";
       mealList.classList.add('notFound');
