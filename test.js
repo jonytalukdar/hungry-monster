@@ -15,13 +15,13 @@ function getMealList() {
   const searchInput = document.getElementById('search-input').value[0];
   fetch(`https://www.themealdb.com/api/json/v1/1/search.php?f=${searchInput}`)
     .then((response) => response.json())
-    .then((data) => disPlay(data))
+    .then((data) => displayMealItem(data))
     .catch((error) =>
       window.alert(searchInput + ' : Meals Name Should Not Be A Number')
     );
 }
 
-const disPlay = (foods) => {
+const displayMealItem = (foods) => {
   const input = document.getElementById('search-input').value;
   let html = '';
 
