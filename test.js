@@ -23,7 +23,7 @@ const disPlay = (foods) => {
   let html = '';
 
   foods.meals.forEach((meal) => {
-    if (input.length == 1) {
+    if (input.length === 1) {
       html += `
         <div class = "meal-item" data-id = "${meal.idMeal}">
             <div class = "meal-img">
@@ -44,8 +44,8 @@ const disPlay = (foods) => {
 };
 
 const showMealDetails = document.getElementById('meal');
-showMealDetails.addEventListener('click', function (e) {
-  let mealItem = e.target.parentElement.parentElement;
+showMealDetails.addEventListener('click', function (event) {
+  let mealItem = event.target.parentElement.parentElement;
   fetch(
     `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealItem.dataset.id}`
   )
