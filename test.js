@@ -17,7 +17,9 @@ function getMealList() {
     .then((response) => response.json())
     .then((data) => displayMealItem(data))
     .catch((error) =>
-      window.alert(searchInput + ' : Meals Name Should Not Be A Number')
+      window.alert(
+        searchInput + ' : Meals Name Should Not Be A Number or Symbol'
+      )
     );
 }
 
