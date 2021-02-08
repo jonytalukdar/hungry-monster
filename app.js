@@ -23,10 +23,10 @@ function getMealList() {
     );
 }
 
+// function for create  meals item
 const displayMealItem = (foods) => {
   const input = document.getElementById('search-input').value;
   let html = '';
-
   foods.meals.forEach((meal) => {
     if (input.length === 1) {
       html += `
@@ -48,6 +48,7 @@ const displayMealItem = (foods) => {
   });
 };
 
+//event for show meals details
 const showMealDetails = document.getElementById('meal');
 showMealDetails.addEventListener('click', function (event) {
   let mealItem = event.target.parentElement.parentElement;
@@ -58,7 +59,7 @@ showMealDetails.addEventListener('click', function (event) {
     .then((data) => mealRecipeModal(data.meals));
 });
 
-// create a modal
+// create a modal function
 function mealRecipeModal(meal) {
   meal = meal[0];
   let html = `
